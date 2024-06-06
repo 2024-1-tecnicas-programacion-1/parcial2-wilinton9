@@ -7,7 +7,7 @@ public class Vehiculo {
     private int año;
     private TipoCombustible tipoCombustible;
     
-    // Constructor
+    
     public Vehiculo(String marca, String modelo, int año, TipoCombustible tipoCombustible) {
         this.marca = marca;
         this.modelo = modelo;
@@ -15,12 +15,12 @@ public class Vehiculo {
         this.tipoCombustible = tipoCombustible;
     }
     
-    // Método para imprimir la información del vehículo
+   
     public String imprimirInformacion() {
         return marca + " " + modelo + " " + año + " - Tipo de Combustible: " + tipoCombustible;
     }
     
-    // Getters y Setters (opcional, pero recomendado para acceder a los atributos)
+   
     public String getMarca() {
         return marca;
     }

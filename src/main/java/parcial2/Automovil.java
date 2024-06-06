@@ -5,9 +5,10 @@ public class Automovil extends Vehiculo {
     private int numeroPuertas;
     private TipoCombustible tipoCombustible;
     
-    // Constructor
     public Automovil(String marca, String modelo, int año, int numeroPuertas, TipoCombustible tipoCombustible) {
+        // Llama al constructor de la clase base (Vehiculo)
         super(marca, modelo, año);
+        // Inicializa los atributos adicionales
         this.numeroPuertas = numeroPuertas;
         this.tipoCombustible = tipoCombustible;
     }
