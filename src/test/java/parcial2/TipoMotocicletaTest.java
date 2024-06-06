@@ -7,9 +7,10 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import org.junit.jupiter.api.Test;
 
 public class TipoMotocicletaTest {
-   
-    TODO: Descomenta el siguiente código una vez hayas completado el enumerado TipoMotocicleta
-    **
+ 
+  
+    //TODO: Descomenta el siguiente código una vez hayas completado el enumerado TipoMotocicleta
+    /**
     @Test
     public void testEnumValues() {
         TipoMotocicleta[] expectedValues = {

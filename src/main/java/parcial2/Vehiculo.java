@@ -1,48 +1,57 @@
 package parcial2;
 
 public class Vehiculo {
-
-    public Vehiculo(String toyota, String corolla, int par) {
+    // Atributos
+    private String marca;
+    private String modelo;
+    private int año;
+    private TipoCombustible tipoCombustible;
+    
+    // Constructor
+    public Vehiculo(String marca, String modelo, int año, TipoCombustible tipoCombustible) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.año = año;
+        this.tipoCombustible = tipoCombustible;
+    }
+    
+    // Método para imprimir la información del vehículo
+    public String imprimirInformacion() {
+        return marca + " " + modelo + " " + año + " - Tipo de Combustible: " + tipoCombustible;
+    }
+    
+    // Getters y Setters (opcional, pero recomendado para acceder a los atributos)
+    public String getMarca() {
+        return marca;
     }
 
-    void setAño(int i) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-    // TODO: Tu código va aquí
-
-    void setAño(int i) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public void setMarca(String marca) {
+        this.marca = marca;
     }
 
-    Object imprimirInformacion() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public String getModelo() {
+        return modelo;
     }
 
-    Object imprimirInformacion() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
     }
 
-    short getAño() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public int getAño() {
+        return año;
     }
 
-    void setAño(int i) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public void setAño(int año) {
+        this.año = año;
+    }
+    
+    public TipoCombustible getTipoCombustible() {
+        return tipoCombustible;
     }
 
-    void setMarca(String ford) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    Object getModelo() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    Object getMarca() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    Object getModelo() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public void setTipoCombustible(TipoCombustible tipoCombustible) {
+        this.tipoCombustible = tipoCombustible;
     }
 }
+
+
